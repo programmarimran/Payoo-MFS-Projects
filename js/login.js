@@ -27,7 +27,7 @@ if(acountNumber.length!==11){
     alert('please 11 digit number')
 }
 else if(acountNumber[0]!=='0'){
-    alert('please first number 0')
+    alert('please mobile first number 0')
 }
 
 else if(accountPassword.length!==4 || accountPassword!=='1234'){
