@@ -80,41 +80,42 @@
               <div class="">
                 <div class="">
                     <h1 class="font-semibold text-base text-[#080808] mt-7 mb-3 w-9/12 mx-auto text-start">Add Money</h1>
-                  <fieldset class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
+                  <form class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
                 <div class="w-10/12 mx-auto space-y-4 pb-3">
                         <label for="" class="fieldset-label font-medium text-base text-[#666768] mt-3">Select A Bank</label>
                     <div class="dropdown  w-full ">
-                        <div tabindex="0" role="button" class="w-full btn ">
+                        <div value="janina" id="add-select-bank" tabindex="0" role="button" class="w-full btn ">
                             
-                                <span class="mr-12 text-[#666768]">Select A Bank</span>
+                                <span value="kkkkkkkkk" class="mr-12 text-[#666768]">Select A Bank</span>
                             <span class="rotate-90 ml-20 text-[#666768]">></span>
                             
                         </div>
                         
                         <ul tabindex="0" class="dropdown-content  bg-[#F4F5F7] rounded-xl h-12 w-full flex flex-col gap-2">
-                          <li class="btn text-center"><a>Bkash</a></li>
-                          <li class="btn text-center"><a>Nagad</a></li>
-                          <li class="btn text-center"><a>DBBL</a></li>
+                          <li value="Bkash" class="btn text-center"><a>Bkash</a></li>
+                          <li value="Nagad" class="btn text-center"><a>Nagad</a></li>
+                          <li value="DBBL" class="btn text-center"><a>DBBL</a></li>
                         </ul>
                       </div>
                     <label class="fieldset-label font-medium text-base text-[#666768]">Bank Account Number</label>
-                    <input type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 11 digit account number" />
+                    <input id="add-money-account-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 11 digit account number" />
 
                     <label class="fieldset-label font-medium text-base text-[#666768]">Amount to Add</label>
-                    <input type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Add Amount to withdraw" />
+                    <input id="add-money-enter-amount" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Add Amount to withdraw" />
 
                     <label class="fieldset-label font-medium text-base text-[#666768]">Pin Number</label>
-                    <input type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 4 digit pin number" />
+                    <input id="add-money-pin-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 4 digit pin number" />
                     
                     
-                    <button class="h-12 w-full text-center text-white bg-[#0874F2] mx-auto rounded-xl font-medium text-base">Add Money</button>
+                    <button id="btn-add-money" class="h-12 w-full text-center text-white bg-[#0874F2] mx-auto rounded-xl font-medium text-base">Add Money</button>
                 </div>
-                  </fieldset>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         
     </main>
+    <script src="./js/addmoney.js"></script>
 </body>
 </html>
