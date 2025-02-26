@@ -29,7 +29,7 @@
             <img class="w-10" src="./assets/Group.png" alt="">
         
         <div>
-            <h1 class="font-extrabold text-lg text-[#080808]">$4500</h1>
+            <h1 class="font-extrabold text-lg text-[#080808]">$ <span id="main-balance">4500</span></h1>
             <p class="font-normal text-[14px] text-[#080808]">Available Balance</p>
         </div>
         </div>
@@ -46,28 +46,29 @@
                 <h2 class="font-bold text-2xl text-[#080808] mb-1 px-1">🔥Welcome to Payooo!</h2>
             <p class="font-normal text-base text-[#666768] px-1">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
             </section>
+            <!-- main service option -->
             <section class="grid grid-cols-3 gap-2 px-3 mt-6 bg-white">
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-add-money" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/wallet1.png" alt="">
                     <p class="font-normal text-[14px]">Add money</p>
                 </div>
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-cashout" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/send1.png" alt="">
                     <p class="font-normal text-[14px]">Cashout</p>
                 </div>
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-sendmoney" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/money1.png" alt="">
                     <p class="font-normal text-[14px]">Transfer Money</p>
                 </div>
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-get-bonus" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/bonus1.png" alt="">
                     <p class="font-normal text-[14px]">Get Bonus</p>
                 </div>
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-paybill" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/purse1.png" alt="">
                     <p class="font-normal text-[14px]">Pay Bill</p>
                 </div>
-                <div class="border border-[#666768] text-center rounded-xl py-4">
+                <div id="main-transaction" class="border border-[#666768] text-center rounded-xl py-4">
                     <img class="mx-auto w-6" src="./assets/transaction1.png" alt="">
                     <p class="font-normal text-[14px]">Transaction</p>
                 </div>
@@ -80,36 +81,28 @@
               <div class="">
                 <div class="">
                     <h1 class="font-semibold text-base text-[#080808] mt-7 mb-3 w-9/12 mx-auto text-start">Add Money</h1>
-                  <form class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
-                <div class="w-10/12 mx-auto space-y-4 pb-3">
-                        <label for="" class="fieldset-label font-medium text-base text-[#666768] mt-3">Select A Bank</label>
-                    <div class="dropdown  w-full ">
-                        <div value="janina" id="add-select-bank" tabindex="0" role="button" class="w-full btn ">
+                    <form class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
+                        <div class="w-10/12 mx-auto space-y-4 pb-3">
+                            <label for="" class="fieldset-label font-medium text-base text-[#666768] mt-3">Select A Bank</label>
+                            <select id="add-select-bank"  name="Bank" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none text-base font-light text-[#666768] text-center">
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="DBBL">DBBL</option>
+                            </select>
+        
+                            <label class="fieldset-label font-medium text-base text-[#666768]">Bank Account Number</label>
+                            <input id="add-money-account-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 11 digit account number" />
+        
+                            <label class="fieldset-label font-medium text-base text-[#666768]">Amount to Add</label>
+                            <input id="add-money-enter-amount" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Add Amount to withdraw" />
+        
+                            <label class="fieldset-label font-medium text-base text-[#666768]">Pin Number</label>
+                            <input id="add-money-pin-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 4 digit pin number" />
                             
-                                <span value="kkkkkkkkk" class="mr-12 text-[#666768]">Select A Bank</span>
-                            <span class="rotate-90 ml-20 text-[#666768]">></span>
                             
+                            <button id="btn-add-money" class="h-12 w-full text-center text-white bg-[#0874F2] mx-auto rounded-xl font-medium text-base">Add Money</button>
                         </div>
-                        
-                        <ul tabindex="0" class="dropdown-content  bg-[#F4F5F7] rounded-xl h-12 w-full flex flex-col gap-2">
-                          <li value="Bkash" class="btn text-center"><a>Bkash</a></li>
-                          <li value="Nagad" class="btn text-center"><a>Nagad</a></li>
-                          <li value="DBBL" class="btn text-center"><a>DBBL</a></li>
-                        </ul>
-                      </div>
-                    <label class="fieldset-label font-medium text-base text-[#666768]">Bank Account Number</label>
-                    <input id="add-money-account-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 11 digit account number" />
-
-                    <label class="fieldset-label font-medium text-base text-[#666768]">Amount to Add</label>
-                    <input id="add-money-enter-amount" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Add Amount to withdraw" />
-
-                    <label class="fieldset-label font-medium text-base text-[#666768]">Pin Number</label>
-                    <input id="add-money-pin-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 4 digit pin number" />
-                    
-                    
-                    <button id="btn-add-money" class="h-12 w-full text-center text-white bg-[#0874F2] mx-auto rounded-xl font-medium text-base">Add Money</button>
-                </div>
-                  </form>
+                          </form>
                 </div>
               </div>
             </div>

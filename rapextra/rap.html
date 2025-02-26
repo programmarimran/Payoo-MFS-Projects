@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Money</title>
+    <!-- tailwind connect link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy UI conncect link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font awsome connect link -->
+    <script src="https://kit.fontawesome.com/dc56b60fc7.js" crossorigin="anonymous"></script>
+    <style>
+        .font-outfit{
+            font-family: "Outfit", serif;
+        }
+    </style>
+</head>
+<body class="font-outfit max-w-screen-md mx-auto min-h-screen  bg-[#F4F5F7] relative pb-28">
+    <!-- header part is start -->
+    
+    
+    <main>
+        
+        <!-- Input field add money -->
+        <div class="">
+            <div class="">
+              
+              <div class="">
+                <div class="">
+                    <h1 class="font-semibold text-base text-[#080808] mt-7 mb-3 w-9/12 mx-auto text-start">Add Money</h1>
+                  <form class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
+                <div class="w-10/12 mx-auto space-y-4 pb-3">
+                    <label for="" class="fieldset-label font-medium text-base text-[#666768] mt-3">Select A Bank</label>
+                    <select  name="Bank" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none text-base font-light text-[#666768] text-center">
+                        <option value="Bkash">Bkash</option>
+                        <option value="Nagad">Nagad</option>
+                        <option value="DBBL">DBBL</option>
+                    </select>
+
+                    <label class="fieldset-label font-medium text-base text-[#666768]">Bank Account Number</label>
+                    <input id="add-money-account-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 11 digit account number" />
+
+                    <label class="fieldset-label font-medium text-base text-[#666768]">Amount to Add</label>
+                    <input id="add-money-enter-amount" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Add Amount to withdraw" />
+
+                    <label class="fieldset-label font-medium text-base text-[#666768]">Pin Number</label>
+                    <input id="add-money-pin-number" type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter 4 digit pin number" />
+                    
+                    
+                    <button id="btn-add-money" class="h-12 w-full text-center text-white bg-[#0874F2] mx-auto rounded-xl font-medium text-base">Add Money</button>
+                </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </main>
+    <script src="./js/addmoney.js"></script>
+</body>
+</html>

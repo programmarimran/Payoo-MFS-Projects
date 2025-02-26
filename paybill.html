@@ -83,22 +83,13 @@
                   <fieldset class="fieldset bg-white rounded-2xl w-11/12 mx-auto">
                 <div class="w-10/12 mx-auto space-y-4 pb-3">
                         <label for="" class="fieldset-label font-medium text-base text-[#666768] mt-3">Select To Pay</label>
-                    <div class="dropdown  w-full ">
-                        <div tabindex="0" role="button" class="w-full btn ">
-                            
-                                <span class="mr-12 text-[#666768]">Select back</span>
-                            <span class="rotate-90 ml-20 text-[#666768]">></span>
-                            
-                        </div>
-                        
-                        <ul tabindex="0" class="dropdown-content  bg-[#F4F5F7] rounded-xl h-12 w-full flex flex-col gap-2">
-                          <li class="btn text-center"><a>Polli Bidyut</a></li>
-                          <li class="btn text-center"><a>BPDB</a></li>
-                          <li class="btn text-center"><a>GAS</a></li>
-                          <li class="btn text-center"><a>WATER</a></li>
-                          <li class="btn text-center"><a>INTERNET</a></li>
-                        </ul>
-                      </div>
+                        <select  name="Bank" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none text-base font-light text-[#666768] text-center">
+                            <option value="Polli Bidyut">Polli Bidyut</option>
+                            <option value="BPDB">BPDB</option>
+                            <option value="GAS">GAS</option>
+                            <option value="WATER">WATER</option>
+                            <option value="BETICROM">BETICROM</option>
+                        </select>
                     <label class="fieldset-label font-medium text-base text-[#666768]">Biller Account Number</label>
                     <input type="number" class="h-12 w-full bg-[#F4F5F7]  mx-auto rounded-xl border-none placeholder:font-light  placeholder:text-base placeholder:pl-10 text-center" placeholder="Enter account number" />
 
